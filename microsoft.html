@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      main {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-image: url(try.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center, bottom;
+        filter: blur(5px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 90px;
+        
+      }
+      main::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+      }
+
+      section {
+        width: 405px;
+        background-color: #fff;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 100px;
+        left: 500px;
+      }
+      .initial {
+        width: 100%;
+        height: 400px;
+        padding: 20px;
+      }
+      .initial img {
+        margin-top: 10px;
+        margin-left: 15px;
+      }
+      .initial ul {
+        list-style: none;
+        text-align: left;
+      }
+      .lis li{
+        margin-top: 15px;
+        margin-bottom: 10px;
+      }
+
+      .initial form input {
+        font: 1em sans-serif;
+        color: gray;
+        margin-top: 20px;
+        margin-left: 10px;
+        border: 0;
+        border-bottom: 1px solid black;
+        outline: none;
+        width: 340px;
+      }
+
+      .initial p {
+        width: 370px;
+        font-size: 17px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 30px;
+
+        margin-left: 10px;
+        padding-right: 5px;
+      }
+      .initial button {
+        background-color: #005da6;
+        color: #fff;
+        width: 100px;
+        padding: 5px;
+        font-size: 14px;
+        margin-left: 265px;
+        margin-top: 40px;
+      }
+
+      @media screen and (max-width:1000){
+        main{
+            width: 50%;
+            height: 50vh;
+        }
+        section{
+            width: 100px;
+            height: 40%;
+                 }
+                 .initial{
+                    width: 50%;
+                 }
+      }
+    </style>
+  </head>
+  <body>
+    <main></main>
+
+
+    <section>
+      <div class="initial">
+        <img src="download.png" alt="" />
+
+        <p>
+          Because you're accessing sensitive info, you need to verify your
+          password
+        </p>
+
+        <form action="">
+          <ul class="lis">
+            <li><input type="text" placeholder="Email" /></li>
+          </ul>
+          <ul>
+            <li><input type="text" placeholder="Password" /></li>
+          </ul>
+        </form>
+        <button>Next</button>
+      </div>
+    </section>
+  </body>
+</html>
